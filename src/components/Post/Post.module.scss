@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  background-color: wheat;
+  padding: 8px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+header {
+  font-size: 20px;
+  font-weight: 600;
+  border-bottom: 2px solid black;
+}
+
+article {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  button {
+    margin-left: 5px;
+  }
+}
+
+section .author {
+  font-weight: 500;
+}
+
+section.popUp {
+  display: none;
+}
+
+// .show {
+//   display: flex;
+//   width: 200px;
+//   height: 200px;
+// }
