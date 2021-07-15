@@ -1,23 +1,31 @@
 .container {
   width: 100%;
-  background-color: wheat;
-  padding: 4px;
+  background-color: #d8e2dc;
+  padding: 2px;
   border-radius: 5px;
-  margin: 10px;
+  margin-top: 10px;
 }
 
 header {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
-  border-bottom: 2px solid black;
+  border-bottom: 1px dotted black;
+  border-top: 1px dotted black;
+  background-color: #d8e2dc;
 }
 
 article {
   margin-top: 10px;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 
   button {
     margin-left: 5px;
+    background-color: #9d8189;
+  }
+  .buttonDelete {
+    background-color: #f4acb7;
   }
 }
 
@@ -25,12 +33,14 @@ section .author {
   font-weight: 500;
 }
 
-section.popUp {
-  display: none;
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 5px 0 5px;
+  }
+  header {
+    overflow-y: scroll;
+    font-size: 16px;
+    font-weight: 600;
+    border-bottom: 1px dotted black;
+  }
 }
-
-// .show {
-//   display: flex;
-//   width: 200px;
-//   height: 200px;
-// }

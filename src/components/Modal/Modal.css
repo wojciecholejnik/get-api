@@ -1,0 +1,20 @@
+.author {
+  font-weight: 600;
+}
+
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 60%;
+  padding: 5px;
+}
+
+.deleteButton {
+  background-color: #f4acb7;
+}
+
+@media screen and (max-width: 600px) {
+  .popup-content {
+    width: 90%;
+  }
+}

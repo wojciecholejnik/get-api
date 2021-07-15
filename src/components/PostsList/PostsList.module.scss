@@ -1,4 +1,15 @@
-// .container {
-//   overflow: hidden;
-//   border: 2px solid black;
-// }
+.container {
+  width: 80%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}

@@ -1,17 +1,49 @@
 .app {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  min-height: 100vh;
-  background-color: aliceblue;
+  height: 99vh;
+  background-color: #ffe5d9;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
+  animation-name: easyOn;
+  animation-duration: 2s;
 }
 
 .pagination {
   display: flex;
+  margin-top: 10px;
+  padding: 3px 0;
 
   button {
     margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    height: auto;
+    padding: 0 5px 35px 0;
+  }
+
+  .pagination {
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    background-color: lightgray;
+    width: 100%;
+
+    button {
+      margin: 0 30px;
+    }
+  }
+}
+
+@keyframes easyOn {
+  from {
+    opacity: 0;
+  }
+  to {
+    height: 1;
   }
 }
